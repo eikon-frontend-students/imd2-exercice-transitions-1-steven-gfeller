@@ -59,3 +59,123 @@ video {
 // ---------------------------------------------
 // Votre code ici :
 // ---------------------------------------------
+
+.wrapper-hover .item:hover {
+  background: var(--pink);
+}
+
+.wrapper-transition .item {
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper-transition .item:hover {
+  background: var(--pink);
+}
+
+.wrapper-delay .item {
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.5s;
+}
+
+.wrapper-delay .item:hover {
+  background: var(--pink);
+}
+
+.wrapper-two-properties .item {
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.5s;
+}
+
+.wrapper-two-properties .item:hover {
+  background: var(--pink);
+  color: #000;
+}
+
+.wrapper-delay-one-property .item {
+  transition: color 0.5s 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+.wrapper-delay-one-property .item:hover {
+  background: var(--pink);
+  color: #000;
+}
+
+.wrapper-parent .item {
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper-parent:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-delay .item {
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper-parent-delay .item:nth-child(2) {
+  transition-delay: 0.5s;
+}
+
+.wrapper-parent-delay .item:nth-child(3) {
+  transition-delay: 1s;
+}
+
+.wrapper-parent-delay:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-children {
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper-parent-children .item {
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper-parent-children:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-children:hover {
+  background: var(--blue);
+}
+
+.wrapper-parent-children-delay {
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper-parent-children-delay .item {
+  transition: 0.5s 0.5s ease-in-out;
+}
+
+.wrapper-parent-children-delay:hover {
+  background: var(--blue);
+}
+
+.wrapper-parent-children-delay:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-translate .item {
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper-translate .item:hover {
+  transform: translateY(20%);
+}
+
+.wrapper-rotate .item {
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper-rotate .item:hover {
+  rotate: 90deg;
+}
+
+.wrapper-scale .item {
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper-scale .item:hover {
+  scale: 120%;
+}
